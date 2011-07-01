@@ -1,3 +1,9 @@
+ganglia (3.2.0-1) unstable; urgency=low
+  
+  * Replace useradd with adduser
+
+ -- Jason Cook <jason@fastly.com>  Fri, 01 Jul 2011 16:21:42 -0700
+
 ganglia (3.2.0-0) unstable; urgency=low
   
   * Rebase against 3.2.x svn
