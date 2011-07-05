@@ -3,12 +3,12 @@ set -e
 
 if ! getent group ganglia >/dev/null; then
 	echo Adding group: ganglia.
-	groupadd --system ganglia
+	addgroup --system ganglia
 fi
 
 if ! getent passwd ganglia >/dev/null; then
 	echo Adding system user: ganglia.
-	useradd --system ganglia 
+	adduser --system ganglia --ingroup ganglia --home /var/lib/ganglia ganglia
 	usermod -c "Ganglia Monitor" 	ganglia
 	usermod -d "/var/lib/ganglia" 	ganglia
 	usermod -g "ganglia" 		ganglia

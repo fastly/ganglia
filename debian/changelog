@@ -1,3 +1,9 @@
+ganglia (3.2.0-2) unstable; urgency=low
+  
+  * Replace useradd with adduser for gmetad too
+
+ -- Jason Cook <jason@fastly.com>  Mon, 04 Jul 2011 18:36:20 -0700
+
 ganglia (3.2.0-1) unstable; urgency=low
   
   * Replace useradd with adduser
