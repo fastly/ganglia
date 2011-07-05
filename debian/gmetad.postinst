@@ -8,7 +8,7 @@ fi
 
 if ! getent passwd ganglia >/dev/null; then
 	echo Adding system user: ganglia.
-	adduser --system ganglia --ingroup ganglia --home /var/lib/ganglia ganglia
+	adduser --system ganglia --ingroup ganglia --home /var/lib/ganglia
 	usermod -c "Ganglia Monitor" 	ganglia
 	usermod -d "/var/lib/ganglia" 	ganglia
 	usermod -g "ganglia" 		ganglia

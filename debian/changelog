@@ -1,3 +1,9 @@
+ganglia (3.2.0-3) unstable; urgency=low
+  
+  * Fix jasons broken adduser
+
+ -- Artur Bergman <artur@fastly.com>  Tue, 05 Jul 2011 02:32:59 +0000
+
 ganglia (3.2.0-2) unstable; urgency=low
   
   * Replace useradd with adduser for gmetad too
