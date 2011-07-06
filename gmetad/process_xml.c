@@ -508,6 +508,8 @@ startElement_HOST(void *data, const char *el, const char **attr)
                case LOCATION_TAG:
                   host->location = addstring(host->strings, &edge, attr[i+1]);
                   break;
+	       case TAGS_TAG:
+		  host->tags = addstring(host->strings, &edge, attr[i+1]);
                case STARTED_TAG:
                   host->started = strtoul(attr[i+1], (char **)NULL, 10);
                   break;
