@@ -482,6 +482,7 @@ startElement_HOST(void *data, const char *el, const char **attr)
    edge = 0;
 
    host->location = -1;
+   host->tags = -1;
    host->reported = reported;
    host->tn = tn;
    host->tmax = tmax;
