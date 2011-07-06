@@ -186,10 +186,10 @@ host_report_start(Generic_t *self, datum_t *key, client_t *client, void *arg)
 
    /* Note the hash key is the host's IP address. */
    rc = xml_print(client, "<HOST NAME=\"%s\" IP=\"%s\" REPORTED=\"%u\" "
-      "TN=\"%u\" TMAX=\"%u\" DMAX=\"%u\" LOCATION=\"%s\" GMOND_STARTED=\"%u\">\n",
+      "TN=\"%u\" TMAX=\"%u\" DMAX=\"%u\" LOCATION=\"%s\" GMOND_STARTED=\"%u\" TAGS=\"%s\">\n",
       name, getfield(host->strings, host->ip), host->reported, tn,
       host->tmax, host->dmax, getfield(host->strings, host->location),
-      host->started);
+      host->started, host->type);
 
    return rc;
 }
