@@ -1164,7 +1164,7 @@ end (void *data, const char *el)
       {
          case GRID_TAG:
             rc = endElement_GRID(data, el);
-            /* No break. */
+	    break;
 
          case CLUSTER_TAG:
             rc = endElement_CLUSTER(data, el);
