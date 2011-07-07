@@ -35,7 +35,7 @@
 #include "cmdline.h"
 
 /* Interval (seconds) between cleanup runs */
-#define CLEANUP_INTERVAL 10
+#define CLEANUP_INTERVAL 180
 
 #ifdef AIX
 extern void *h_errno_which(void);
