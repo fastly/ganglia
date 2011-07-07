@@ -1,3 +1,10 @@
+ganglia (3.2.0-7) unstable; urgency=low
+  
+  * Stop recording and propagating dmax entries asap
+  * Dont save the last grid twice
+
+ -- Artur Bergman <artur@fastly.com>  Thu, 07 Jul 2011 03:23:28 +0000
+
 ganglia (3.2.0-6) unstable; urgency=low
   
   * Propagate DMAX you piece of shit
