@@ -141,6 +141,9 @@ metric_report_start(Generic_t *self, datum_t *key, client_t *client, void *arg)
    tn = client->now.tv_sec - metric->t0.tv_sec;
    if (tn<0) tn = 0;
 
+   if (metric->dmax && metric->dmax < tn)
+     return 0;
+
    rc=xml_print(client, "<METRIC NAME=\"%s\" VAL=\"%s\" TYPE=\"%s\" "
       "UNITS=\"%s\" TN=\"%u\" TMAX=\"%u\" DMAX=\"%u\" SLOPE=\"%s\" "
       "SOURCE=\"%s\">\n",
