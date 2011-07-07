@@ -1,3 +1,9 @@
+ganglia (3.2.0-6) unstable; urgency=low
+  
+  * Propagate DMAX you piece of shit
+
+ -- Artur Bergman <artur@fastly.com>  Thu, 07 Jul 2011 01:54:48 +0000
+
 ganglia (3.2.0-5) unstable; urgency=low
   
   * Fix to read the string value
